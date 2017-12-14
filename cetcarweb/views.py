@@ -8,7 +8,7 @@ from .forms import Contact
 # Create your views here.
 def home(request):
 	request.session['page']='home'
-	return render(request,'cetcarweb/base.html')
+	return render(request,'cetcarweb/index.html')
 
 def contact(request):
 	request.session['page']='contact'
