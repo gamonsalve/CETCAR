@@ -1,0 +1,18 @@
+{% extends 'cetcarweb/base.html' %}
+{% block content %}
+<div class="padding">
+	<div class="form-control" align="center">
+		<form method="post">
+			    {% csrf_token %}
+			    {{form.as_p}}
+			    <div>
+			    <button type="submit" class="button-2">Enviar</button>
+				</div>
+		</form>
+   	
+
+
+        
+       
+
+{% endblock %}
