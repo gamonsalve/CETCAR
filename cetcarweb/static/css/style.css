@@ -35,8 +35,8 @@ a {
 a:hover {
 	text-decoration:none
 }
-.col-1, .col-2, .col-3, .col-4 {
-	float:left
+.col-1, .col-2, .col-3 {
+	float:left;
 }
 .wrapper {
 	width:100%;
@@ -47,7 +47,7 @@ a:hover {
 }
 .bg {
 	width:100%;
-	background:url(../images/bg.jpg) center 0 no-repeat
+	background: #fff
 }
 .main {
 	width:984px;
@@ -209,7 +209,7 @@ h1 {
 .logo {
 	display:block;
 	width:224px;
-	height:45px;
+	height:50px;
 	text-indent:-5000px;
 	background:url(../images/logo.png) 0 0 no-repeat;
 	margin:10px 0 8px 0
@@ -286,19 +286,22 @@ h1 {
 	font-size:17px;
 	line-height:1.22em;
 	padding:18px 0 36px;
+	font-weight:bold;
 	margin-top:10px;
-	color:#fff;
-	background:#000;
+	color:#08088A;
+	background:#F38508;
 	text-align:center;
 	border-radius:18px 18px 0 0;
 	-moz-border-radius:18px 18px 0 0;
 	-webkit-border-radius:18px 18px 0 0
 }
 .menu li a.active, .menu li a:hover {
-	color:#0f0f0f;
-	background:#fff;
+	color:#F38508;
+	background:#08088A;
 	padding:28px 0 36px;
 	margin:0
+	font-weight:bold;
+
 }
 /* slider */
 .slider-wrapper {
@@ -533,15 +536,15 @@ h6 {
 .list-1 li {
 	line-height:24px;
 	padding-left:10px;
+	color:#000;
+
 	background:url(../images/marker.gif) 0 10px no-repeat
 }
 .list-1 li a {
 	display:inline-block;
-	color:#9d9d9d
+	color:#000
 }
-.list-1 li a:hover {
-	text-decoration:underline
-}
+
 .list-2 li {
 	line-height:24px
 }
@@ -566,12 +569,12 @@ h6 {
 }
 dl.address {
 	line-height:24px;
-	color:#9d9d9d
+	color:#000
 }
 dl.address span {
 	float:left;
 	width:74px;
-	color:#fefefe
+	color:#000
 }
 dl.contact {
 	line-height:20px;
@@ -664,10 +667,10 @@ footer {
 .row-top {
 	width:100%;
 	padding:33px 0 42px;
-	background:#000
+	background:#F38508
 }
 .row-padding {
-	padding:0 62px
+	padding:1px 150px
 }
 .row-bot {
 	width:100%;
@@ -680,21 +683,13 @@ footer {
 	padding-left:28px
 }
 .list-services li a {
-	color:#9d9d9d;
+	color:#000;
 	text-decoration:none
 }
 .list-services li a:hover {
 	text-decoration:underline
 }
-.list-services li.item-1 {
-	background:url(../images/facebook.png) 0 3px no-repeat
-}
-.list-services li.item-2 {
-	background:url(../images/twitter.png) 0 3px no-repeat
-}
-.list-services li.item-3 {
-	background:url(../images/linkedin.png) 0 3px no-repeat
-}
+
 .footer-logo {
 	display:block;
 	color:#9d9d9d;
