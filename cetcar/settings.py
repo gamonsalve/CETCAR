@@ -24,7 +24,7 @@ SECRET_KEY = '1k2025-dr^5fpb7(+hmlimmn*_a7_pwd_oi0uaj&&3*ur_u#tv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [http://gamonsalve.pythonanywhere.com]
 
 
 # Application definition
