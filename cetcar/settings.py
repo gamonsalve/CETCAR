@@ -24,7 +24,7 @@ SECRET_KEY = '1k2025-dr^5fpb7(+hmlimmn*_a7_pwd_oi0uaj&&3*ur_u#tv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gamonsalve.pythonanywhere.com','127.0.0.1']
+ALLOWED_HOSTS = ['gamonsalve.pythonanywhere.com','127.0.0.1','cetcar.herokuapp.com']
 
 
 # Application definition
