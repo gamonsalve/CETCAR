@@ -1,21 +1,39 @@
 {% extends 'cetcarweb/base.html' %}
-
 {% block content %}
-    {% load static %}
-      <div class="row-3">
-        <div class="slider-wrapper">
-          <div class="slider">
-            <ul class="items">
-              <li><img src="{% static 'images/slider-img1.jpg' %}" alt=""> <strong class="banner"> <strong class="b1">our solidity</strong> <strong class="b2">is equity</strong> <strong class="b3">Innovation and flexibility, quick and<br>
-                high results - oriented work</strong> </strong> </li>
-              <li><img src="{% static 'images/slider-img2.jpg' %}" alt=""> <strong class="banner"> <strong class="b1">our aim is</strong> <strong class="b2">Dedicated</strong> <strong class="b3">To conducting business affairs using<br>
-                the highest standards</strong> </strong> </li>
-              <li><img src="{% static 'images/slider-img3.jpg' %}" alt=""> <strong class="banner"> <strong class="b1">encourage</strong> <strong class="b2">Business</strong> <strong class="b3">Success and growth with our<br>
-                professionals of this sphere</strong> </strong> </li>
-            </ul>
-            <a class="prev" href="#">prev</a> <a class="next" href="#">prev</a> </div>
+{% load static %}
+<div class="slider">
+        <div class="container">
+            <div id="about-slider">
+                <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators visible-xs">
+                        <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-slider" data-slide-to="1"></li>
+                        <li data-target="#carousel-slider" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="{% static 'images/slider_one.jpg' %}" class="img-responsive" alt=""> 
+                       </div>
+                       <div class="item">
+                            <img src="{% static 'images/slider_one.jpg' %}"" class="img-responsive" alt=""> 
+                       </div> 
+                       <div class="item">
+                            <img src="{% static 'images/slider_one.jpg' %}" class="img-responsive" alt=""> 
+                       </div> 
+                    </div>
+                    
+                    <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+                        <i class="fa fa-angle-left"></i> 
+                    </a>
+                    
+                    <a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+                        <i class="fa fa-angle-right"></i> 
+                    </a>
+                </div> <!--/#carousel-slider-->
+            </div><!--/#about-slider-->
         </div>
-      </div>
-    </header>
+    </div>
 
 {% endblock %}

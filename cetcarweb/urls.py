@@ -3,7 +3,10 @@ from . import views
 
 urlpatterns = [
 	#url(r'^$',views.ViewName,name=ViewName)
-	#Home view
-	url(r'^$',views.home,name='home'),
-	url(r'^contact/$',views.contact,name='contact'),
+	#inicio view
+	url(r'^$',views.inicio,name='inicio'),
+	url(r'^contacto/$',views.contacto,name='contacto'),
+	url(r'^somos/$',views.somos,name='somos'),
+	url(r'^servicios/$',views.servicios,name='servicios'),
+	url(r'^cursos/$',views.cursos,name='cursos'),
 ]

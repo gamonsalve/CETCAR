@@ -6,11 +6,23 @@ from django.core.mail import send_mail
 from django.contrib import messages
 from .forms import Contact
 # Create your views here.
-def home(request):
+def inicio(request):
 	request.session['page']='home'
 	return render(request,'cetcarweb/index.html')
 
-def contact(request):
+def somos(request):
+	request.session['page']='somos'
+	return render(request,'cetcarweb/about.html')
+
+def servicios(request):
+	request.session['page']='servicios'
+	return render(request,'cetcarweb/services.html')
+
+def cursos(request):
+	request.session['page']='cursos'
+	return render(request,'cetcarweb/courses.html')
+
+def contacto(request):
 	request.session['page']='contact'
 	if request.method=='POST':
 		form=Contact(request.POST)

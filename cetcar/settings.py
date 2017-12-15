@@ -120,6 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
 #EMAIL CONFIGURATION
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'

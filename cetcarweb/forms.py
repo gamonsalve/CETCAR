@@ -8,11 +8,11 @@ class Contact(forms.Form):
 	for i in range(0,len(choices)):
 		choices[i]=(choices[i],choices[i])
 	asunto=forms.ChoiceField(label='Asunto*',choices=choices,widget=forms.Select(attrs=
-                                {'class':'dropdown-header',
-                                'style':'width:50%'}))
+                                {'class':'btn btn-primary dropdown-header',
+                                'style':'background-color:#090C7B;color:#FF8000;font-weight: bold'}))
 	nombre=forms.CharField(label='Nombre*',widget=forms.TextInput(attrs=
             {'class':'form-control',
-            'placeholder':'Nombre',
+            'placeholder':'Nombres y Apellidos',
             'style':'width:50%'}))
 
 	empresa=forms.CharField(label='Empresa',required=False,
@@ -35,6 +35,6 @@ class Contact(forms.Form):
 
 	mensaje=forms.CharField(label='Mensaje*',widget=forms.Textarea(attrs=
                                 {'class':'form-control',
-                                'placeholder':'Descripción corta',
+                                'placeholder':'Deje su mensaje',
                                 'style':'width:50%', 'rows':'5'}))
 
