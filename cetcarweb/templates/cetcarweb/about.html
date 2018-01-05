@@ -1,41 +1,28 @@
 {% extends 'cetcarweb/base.html' %}
 {% block content %}
 {% load staticfiles %}
-<div class="slider">
-        <div class="container">
-            <div id="about-slider">
-                <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators visible-xs">
-                        <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-slider" data-slide-to="1"></li>
-                        <li data-target="#carousel-slider" data-slide-to="2"></li>
-                    </ol>
 
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="{% static 'images/slider_one.jpg' %}" class="img-responsive" alt=""> 
-                       </div>
-                       <div class="item">
-                            <img src="{% static 'images/slider_one.jpg' %}"" class="img-responsive" alt=""> 
-                       </div> 
-                       <div class="item">
-                            <img src="{% static 'images/slider_one.jpg' %}" class="img-responsive" alt=""> 
-                       </div> 
-                    </div>
-                    
-                    <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
-                        <i class="fa fa-angle-left"></i> 
-                    </a>
-                    
-                    <a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
-                        <i class="fa fa-angle-right"></i> 
-                    </a>
-                </div> <!--/#carousel-slider-->
-            </div><!--/#about-slider-->
-        </div>
-    </div>
-<br><br><br><br><br>
-<h3 style="font-family:arial; color:#000">CETCAR es una empresa comprometida con el desarrollo humano y tecnológico de nuestra sociedad, por esta razón te ofrece una alternativa seria y con los más grandes beneficios. Nos permitimos presentar todo un programa de capacitación diseñado para satisfacer tus necesidades sobre SISTEMAS y ELECTRÓNICA; dicha capacitación se desarrolla con un excelente material de estudio y con ingenieros docentes altamente capacitados y experimentados, lo cual permitirá cubrir todas tus expectativas y necesidades, visionando un horizonte muy prometedor en el área laboral.</h3>
-<br><br><br><br><br>
+
+<br>               
+<br>
+<br>
+<div class="item">
+	<img src="{% static 'images/telecomunicaciones.jpg' %}" class="img-responsive"  width="auto" height="100px" align="center">
+</div> 
+               
+<br>              
+
+<h1 style="font-family:arial; color:#000"> ¿QUIÉNES SOMOS? </h1>
+<h3 style="font-family:arial; color:#000" align="justify"> CETCAR es una empresa que ofrece servicios técnicos profesionales en las áreas de Computación, Electrónica y Telecomunicaciones; la cual posee la experiencia y la experticia en la prestación de servicios técnicos profesionales relacionados con la Tecnología de la Información y las Comunicaciones (TIC´s) a empresas y público en general, sustentando su liderazgo tecnológico en la Honestidad, la Calidad y el Cumplimiento.</h3>
+
+<br>
+<h1 style="font-family:arial; color:#000"> MISIÓN </h1>
+<h3 style="font-family:arial; color:#000" align="justify"> CETCAR es una empresa colombiana legalmente establecida, asentada en el área metropolitana de la ciudad de Barranquilla, dedicada a satisfacer las necesidades de soporte técnico en el campo de la Informática, la Electrónica y las Telecomunicaciones. Sus servicios están orientados a brindar soluciones empresariales en las áreas de software, hardware y network. Para ello, presta soporte tecnológico, asesorías y capacitación técnica laboral a la medida de las necesidades particulares de los usuarios. Para realizar su labor hace uso de las herramientas y recursos especializados para tal fin, además del conocimiento y experiencia de su certificado recurso humano.
+</h3>
+
+<br>
+
+<h1 style="font-family:arial; color:#000"> VISIÓN </h1>
+<h3 style="font-family:arial; color:#000" align="justify">CETCAR se consolidará como una organización prestadora de servicios tecnológicos a nivel regional y nacional, la cual será reconocida por su excelso servicio al cliente y por brindar soluciones integrales y eficientes, teniendo como factor diferenciador la perfección en la calidad del servicio prestado, generando confianza y fidelidad en sus clientes. Todo ello, acompañado por una amplia gama de oportunidades de desarrollo personal y profesional para sus colaboradores, los cuales deberán desempeñarse de forma ética y satisfactoria para la empresa y sus clientes. De igual forma, seremos solución integral a las necesidades tecnológicas de la pequeña y mediana empresa, ofreciendo productos y servicios con resultados altamente satisfactorios.
+</h3>
 {% endblock %}

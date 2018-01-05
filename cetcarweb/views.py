@@ -5,9 +5,15 @@ from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.contrib import messages
 from .forms import Contact
+from .models import Servicio
+from .functions import LlenarServicios
+from django.db.models import Q
+import pandas as pd
+
 # Create your views here.
 def inicio(request):
 	request.session['page']='home'
+	#LlenarServicios()
 	return render(request,'cetcarweb/index.html')
 
 def somos(request):
@@ -16,7 +22,17 @@ def somos(request):
 
 def servicios(request):
 	request.session['page']='servicios'
-	return render(request,'cetcarweb/services.html')
+	#getting values from database
+	ServiciosTable=Servicio.objects.filter(Q(categoria="S") | Q(categoria="ST")).values('nombre')  
+	#Creating datatable
+	pd.set_option('display.max_colwidth', -1)
+	ServiciosTable=pd.DataFrame(list(ServiciosTable))
+    #Renaming columns
+	ServiciosTable=ServiciosTable.rename(columns={'nombre':'Servicio'})
+    #Generate HTML Table
+	ServiciosTable=ServiciosTable.to_html(classes='display table-responsive" id = "my_table" style="width:100%',
+                        index=False) 
+	return render(request,'cetcarweb/services.html',{'ServiciosTable':ServiciosTable})
 
 def cursos(request):
 	request.session['page']='cursos'

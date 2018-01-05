@@ -1,6 +1,32 @@
 {% extends 'cetcarweb/base.html' %}
 {% block content %}
 <br><br><br><br><br>
-<h3>Servicios</h3>
 <br><br><br><br><br>
+<div align=center>
+	<div align="center" style="margin-left:10%; margin-right:10%;overflow-x:auto" >
+		<h2 style="font-weight: bold">Nuestros Servicios</h2>
+		  {{ ServiciosTable|safe }}
+	</div>
+
+<br><br><br><br><br>
+
+<script>
+$(document).ready(function() {
+    $('#my_table').DataTable( {
+        "language": {
+            "lengthMenu": "Mostrar _MENU_ Resultados por Página",
+            "zeroRecords": "No se encontró el Servicio",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay registros",
+            "infoFiltered": "(Filtrado de _MAX_ Servicios totales)",
+            "search":         "Buscar:",
+            "paginate": {
+        "first":      "Primera",
+        "last":       "Última",
+        "next":       "Siguiente",
+        "previous":   "Anterior"
+    },
+        }
+    } );
+} );</script>
 {% endblock %}
