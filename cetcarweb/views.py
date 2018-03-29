@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.contrib import messages
 from .forms import Contact
-from .models import Servicio
+from .models import *
 from .functions import LlenarServicios
 from django.db.models import Q
 import pandas as pd
@@ -57,3 +57,12 @@ def contacto(request):
 			return HttpResponse(Mensaje)
 	form=Contact()
 	return render(request,'cetcarweb/contact.html',{'form':form})
+
+def gettest(request):
+	pax=request.GET.get('pax','')
+	bus=request.GET.get('bus','')
+	sensor=request.GET.get('sensor','')
+	if pax!='' and bus!='' and sensor!='':
+		data=SensorData(counter=int(pax),bus_id=bus,sensor_id=sensor)
+		data.save()
+	return HttpResponse(pax)

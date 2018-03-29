@@ -9,4 +9,5 @@ urlpatterns = [
 	url(r'^somos/$',views.somos,name='somos'),
 	url(r'^servicios/$',views.servicios,name='servicios'),
 	url(r'^cursos/$',views.cursos,name='cursos'),
+	url(r'^gettest/$',views.gettest,name='gettest'),
 ]
